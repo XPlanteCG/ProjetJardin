@@ -8,8 +8,9 @@ namespace ProjetJardin.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private ContexteApplication _contexteApplication;
-        Jardin j1 = new Jardin();
-        Jardin j2 = new Jardin();
+                Jardin j1 = new Jardin();
+
+                Jardin j2 = new Jardin();
         List<Aliment> listeAliments = new List<Aliment>();
         public HomeController(ILogger<HomeController> logger, ContexteApplication contexte)
         {
@@ -52,6 +53,7 @@ namespace ProjetJardin.Controllers
                 l4.Description = "Verte";
                 l4.Sucre = "14 grammes";
 
+                List<Aliment> listeAliments = new List<Aliment>();
                 listeAliments.Add(l1);
                 listeAliments.Add(l2);
                 listeAliments.Add(l3);
